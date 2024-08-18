@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 project(L4CasADi)
 
 # Load CUDA if it is installed
+set(CUDA_TOOLKIT_ROOT_DIR "/usr/local/cuda-12.6") # explicitly set the CUDA paths
 find_package(CUDAToolkit)
 find_package(CUDA)
 
